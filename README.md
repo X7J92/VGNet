@@ -50,12 +50,12 @@ Please refer to [get_started.md](docs/get_started.md) for the preparation of the
 
 ## Training
 
-The following is an example of model training on the RefCOCOg dataset.
+The following is an example of model training on the referit dataset.
 ```
-python -m torch.distributed.launch --nproc_per_node=4 --use_env train.py --config configs/VLTVG_R50_gref.py
+python -m torch.distributed.launch --nproc_per_node=4 --use_env train.py --config configs/VGNet_R101_referit.py
 ```
-We train the model on 4 GPUs with a total batch size of 64 for 90 epochs. 
-The model and training hyper-parameters are defined in the configuration file ``VLTVG_R50_gref.py``. 
+We train the model on 4 GPUs(4090) with a total batch size of 64 for 90 epochs. 
+The model and training hyper-parameters are defined in the configuration file ``VLTVG_R101_referit.py``. 
 We prepare the configuration files for different datasets in the ``configs/`` folder. 
 
 
@@ -64,25 +64,11 @@ We prepare the configuration files for different datasets in the ``configs/`` fo
 ## Evaluation
 Run the following script to evaluate the trained model with a single GPU.
 ```
-python test.py --config configs/VLTVG_R50_gref.py --checkpoint VLTVG_R50_gref.pth --batch_size_test 16 --test_split val
+python test.py --config configs/VLTVG_R101_referit.py --checkpoint VGNet_R101_referit.pth --batch_size_test 16 --test_split val
 ```
 Or evaluate the trained model with 4 GPUs:
 ```
-python -m torch.distributed.launch --nproc_per_node=4 --use_env test.py --config configs/VLTVG_R50_gref.py --checkpoint VLTVG_R50_gref.pth --batch_size_test 16 --test_split val
-```
-
-
-
-
-## Citation
-If you find our code useful, please cite our paper. 
-```
-@inproceedings{yang2022vgvl,
-  title={Improving Visual Grounding with Visual-Linguistic Verification and Iterative Reasoning},
-  author={Yang, Li and Xu, Yan and Yuan, Chunfeng and Liu, Wei and Li, Bing and Hu, Weiming},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2022}
-}
+python -m torch.distributed.launch --nproc_per_node=4 --use_env test.py --config configs/VGNet_R101_referit.py --checkpoint VLTVG_R101_referit.pth --batch_size_test 16 --test_split val
 ```
 
 
