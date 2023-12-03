@@ -1,7 +1,8 @@
 # VGNet
 ========
-This is the official implementation of [Improving Visual Grounding with Visual-Linguistic Verification and Iterative Reasoning](https://arxiv.org/abs/2205.00272).
-*IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), 2022.*
+This is the official implementation of [Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position
+Correction for Visual Grounding].
+
 
 ## Introduction
 Our proposed framework for visual grounding. With the features from the two modalities as input, the visual-linguistic verification module and language-guided context encoder establish discriminative features for the referred object. Then, the multi-stage cross-modal decoder iteratively mulls over all the visual and linguistic features to identify and localize the object.
