@@ -13,7 +13,7 @@ Visual grounding has attracted wide attention thanks to its broad application in
 
 
 ## Visualization
-For different input images and texts, we visualize the verification scores, the iterative attention maps of the multi-stage decoder, and the final localization results.
+Visualization of attention maps at different hierarchies and the model detection results.
 
 <p align="center">
   <img src="docs/vis_demo.svg" width="100%"/>
