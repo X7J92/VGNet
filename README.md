@@ -22,74 +22,11 @@ Visualization of attention maps at different hierarchies and the model detection
 
 
 
-## Model Zoo
-
-The models are available in [Google Drive](https://drive.google.com/drive/folders/1fZsUYV3T2ltw_sLBTXFMmFNIyIKOCM2I?usp=sharing).
-
-<table style="width:90%; text-align:center">
-<thead>
-  <tr>
-    <th></th>
-    <th colspan="3">RefCOCO</th>
-    <th colspan="3">RefCOCO+ </th>
-    <th colspan="3">RefCOCOg </th>
-    <th>ReferItGame</th>
-    <th>Flickr30k</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td></td>
-    <td>val</td>
-    <td>testA</td>
-    <td>testB</td>
-    <td>val</td>
-    <td>testA</td>
-    <td>testB</td>
-    <td>val-g</td>
-    <td>val-u</td>
-    <td>test-u</td>
-    <td>test</td>
-    <td>test</td>
-  </tr>
-  <tr>
-    <td>R50</td>
-    <td>84.53</td>
-    <td>87.69</td>
-    <td>79.22</td>
-    <td>73.60</td>
-    <td>78.37</td>
-    <td>64.53</td>
-    <td>72.53</td>
-    <td>74.90</td>
-    <td>73.88</td>
-    <td>71.60</td>
-    <td>79.18</td>
-  </tr>
-  <tr>
-    <td>R101</td>
-    <td>84.77</td>
-    <td>87.24</td>
-    <td>80.49</td>
-    <td>74.19</td>
-    <td>78.93</td>
-    <td>65.17</td>
-    <td>72.98</td>
-    <td>76.04</td>
-    <td>74.18</td>
-    <td>71.98</td>
-    <td>79.84</td>
-  </tr>
-</tbody>
-</table>
-
-
-
 
 ## Installation
 1. Clone the repository.
     ```bash
-    git clone https://github.com/yangli18/VLTVG
+    git clone https://github.com/X7J92/VGNet
     ```
 
 2. Install PyTorch 1.5+ and torchvision 0.6+.
