@@ -75,4 +75,4 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env test.py --config
 
 
 ## Acknowledgement
-Part of our code is based on the previous works [DETR](https://github.com/facebookresearch/detr) and [TransVg]([https://github.com/zyang-ur/ReSC](https://github.com/djiajunustc/TransVG)https://github.com/djiajunustc/TransVG).
+Part of our code is based on the previous works [DETR](https://github.com/facebookresearch/detr) and [TransVg](https://github.com/djiajunustc/TransVG).
