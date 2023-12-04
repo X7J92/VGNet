@@ -64,11 +64,11 @@ We prepare the configuration files for different datasets in the ``configs/`` fo
 ## Evaluation
 Run the following script to evaluate the trained model with a single GPU.
 ```
-python test.py --config configs/VLTVG_R101_referit.py --checkpoint VGNet_R101_referit.pth --batch_size_test 16 --test_split val
+python test.py --config configs/VGNet_R101_referit.py --checkpoint VGNet_R101_referit.pth --batch_size_test 16 --test_split val
 ```
 Or evaluate the trained model with 4 GPUs:
 ```
-python -m torch.distributed.launch --nproc_per_node=4 --use_env test.py --config configs/VGNet_R101_referit.py --checkpoint VLTVG_R101_referit.pth --batch_size_test 16 --test_split val
+python -m torch.distributed.launch --nproc_per_node=4 --use_env test.py --config configs/VGNet_R101_referit.py --checkpoint VGNet_R101_referit.pth --batch_size_test 16 --test_split val
 ```
 
 
