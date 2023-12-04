@@ -269,20 +269,6 @@ def main(args):
             optimizer.load_state_dict(checkpoint['optimizer'])
             lr_scheduler.load_state_dict(checkpoint['lr_scheduler'])
             args.start_epoch = checkpoint['epoch'] + 1
-    # if args.resume:
-    #     checkpoint = torch.load(args.resume, map_location='cpu')
-    #     # 获取当前模型的state_dict
-    #     model_dict = model_without_ddp.state_dict()
-    #
-    #     # 过滤掉不在模型B中的模型A权重
-    #     checkpoint = {k: v for k, v in checkpoint['model'].items() if k in model_dict}
-    #
-    #     # 更新模型B的权重
-    #     model_dict.update(checkpoint)
-    #
-    #     # 加载权重到模型B中
-    #     model_without_ddp.load_state_dict(model_dict)
-    #
 
     elif args.load_weights_path:
         model_without_ddp.load_pretrained_weights(args.load_weights_path)
@@ -364,30 +350,7 @@ def main(args):
                         'epoch': epoch,
                         'args': args,
                     }, checkpoint_path)
-        # for checkpoint_path in checkpoint_paths:
-        #     # If current epoch is one of the 5th epochs or it's the last epoch
-        #     if (epoch + 1) % 10 == 0 or (epoch + 1) == args.epochs:
-        #         if checkpoint_path.name == 'checkpoint.pth':
-        #             utils.save_on_master({
-        #                 'model': model_without_ddp.state_dict(),
-        #                 'epoch': epoch,
-        #                 'args': args,
-        #             }, checkpoint_path)
-        #         elif checkpoint_path.name in ['checkpoint_best_acc.pth']:
-        #             utils.save_on_master({
-        #                 'model': model_without_ddp.state_dict(),
-        #                 'epoch': epoch,
-        #                 'args': args,
-        #             }, checkpoint_path)
-        #         else:
-        #             utils.save_on_master({
-        #                 'model': model_without_ddp.state_dict(),
-        #                 'optimizer': optimizer.state_dict(),
-        #                 'lr_scheduler': lr_scheduler.state_dict(),
-        #                 'epoch': epoch,
-        #                 'args': args,
-        #             }, checkpoint_path)
-
+                    
         if args.output_dir and utils.is_main_process():
             epoch_logger.info('  '.join(
                 [f'Epoch [{epoch + 1}](train stats)',
