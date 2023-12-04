@@ -1,4 +1,4 @@
-![Uploading image.png…]()
+
 # VGNet
 ========
 This is the official implementation of [Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position
