@@ -1,3 +1,4 @@
+![Uploading image.png…]()
 # VGNet
 ========
 This is the official implementation of [Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position
@@ -55,7 +56,7 @@ The following is an example of model training on the referit dataset.
 python -m torch.distributed.launch --nproc_per_node=4 --use_env train.py --config configs/VGNet_R101_referit.py
 ```
 We train the model on 4 GPUs(4090) with a total batch size of 64 for 90 epochs. 
-The model and training hyper-parameters are defined in the configuration file ``VLTVG_R101_referit.py``. 
+The model and training hyper-parameters are defined in the configuration file ``VGNet_R101_referit.py``. 
 We prepare the configuration files for different datasets in the ``configs/`` folder. 
 
 
