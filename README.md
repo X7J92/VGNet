@@ -20,7 +20,7 @@ Visual grounding has attracted wide attention thanks to its broad application in
 Visualization of attention maps at different hierarchies and the model detection results.
 
 <p align="center">
-  <img src="docs/8.jpg" width="100%"/>
+  <img src="docs/8.jpg" width="75%"/>
 </p>
 
 
