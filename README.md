@@ -4,7 +4,7 @@ This is the official implementation of [Phrase Decoupling Cross-Modal Hierarchic
 Correction for Visual Grounding].
 
 <p align="center">
-  <img src="docs/2.jpg" width="46.68%"/>
+  <img src="docs/2.jpg" width="60.68%"/>
 </p>
 
 
