@@ -23,6 +23,10 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env test.py --config
 ```
 
 
+## e-mail
+
+call me: mengzhaowangg@163.com
+
 
 
 ## Acknowledgement
