@@ -1,3 +1,9 @@
+# VGNet
+========
+This is the official implementation of [Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position
+Correction for Visual Grounding].
+
+
 ## Training
 
 The following is an example of model training on the referit dataset.
@@ -9,7 +15,8 @@ The model and training hyper-parameters are defined in the configuration file ``
 We prepare the configuration files for different datasets in the ``configs/`` folder. 
 
 
-
+## Preparation
+Please refer to [get_started.md](docs/get_started.md) for the preparation of the datasets and pretrained checkpoints.
 
 ## Evaluation
 Run the following script to evaluate the trained model with 4 GPUs.
