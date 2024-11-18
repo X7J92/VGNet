@@ -1,7 +1,7 @@
 # VGNet
 ========
 This is the official implementation of [Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position
-Correction for Visual Grounding].
+Correction for Visual Grounding].The code is still being organized, please be patient.
 
 
 ## Training
