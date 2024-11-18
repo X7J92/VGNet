@@ -1,7 +1,7 @@
 # VGNet
 ========
 This is the official implementation of [Phrase Decoupling Cross-Modal Hierarchical Matching and Progressive Position
-Correction for Visual Grounding].The code is still being organized, please be patient.
+Correction for Visual Grounding].
 
 
 ## Training
@@ -25,7 +25,7 @@ python -m torch.distributed.launch --nproc_per_node=4 --use_env test.py --config
 
 ## e-mail
 
-call me: mengzhaowangg@163.com
+call me: mengzhaowangg@163.com；The code is still being organized, please be patient.
 
 
 
