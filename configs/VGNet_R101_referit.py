@@ -1,3 +1,5 @@
+#this config for referit-101
+
 dataset='referit'
 
 output_dir='/media/pc/other/VLTVG/work_dirs/referit-101'
