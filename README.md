@@ -30,4 +30,4 @@ call me: mengzhaowangg@163.com；The code is still being organized, please be pa
 
 
 ## Acknowledgement
-Part of our code is based on the previous works [DETR](https://github.com/facebookresearch/detr) and [TransVg](https://github.com/djiajunustc/TransVG).
+Part of our code is based on the previous works [TransVg](https://github.com/djiajunustc/TransVG).
